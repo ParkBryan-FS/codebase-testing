@@ -19,3 +19,28 @@ function findMax(arr) {
     return max;
 }
 
+// purgeDuplicates function
+function purgeDuplicates(arr) {
+    const unique = [];
+    for (let item of arr) {
+        if (!unique.includes(item)) {
+            unique.push(item);
+        }
+    }
+    return unique;
+}
+
+// countVowels(str) function
+function countVowels(str) {
+    let count = 0;
+    const vowels = `aeiouAEIOU`;
+    for (let char of str) {
+        if(vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
+}
+
+
+
